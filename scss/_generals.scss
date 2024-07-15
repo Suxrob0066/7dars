@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+font-family: "DM Serif Display", sans-serif;
+font-family: "Public Sans", sans-serif;
+background-color: #ffffff;
+background-image: url(../images/Bitmap1.png);
+background-position: right top;
+background-repeat: no-repeat;
+background-size: 780px 780px;
+background-position: right top;
+}
+
+
+@media (max-width:850px){
+    body{
+        background-image: url("../images/Bitmap2.png");
+        background-repeat: no-repeat;
+        background-size: 949px auto;
+        background-position: center top;
+    }
+}
+@media (max-width:689px){
+    body{
+        background-image: url("../images/Bitmap3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+}

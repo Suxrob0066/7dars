@@ -1,0 +1,162 @@
+.site-header {
+    padding: 40px 0 74px;
+}
+
+.header{
+    @include Display($items:center, $space:space-between, $gap: 0px);
+}
+.header__logo-wrapper {
+    @include Display($items:center, $space:start, $gap:64px);
+}
+.header_logo-link {
+    display: inline-block;
+}
+
+.header__menu-btn{
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+.header__list {
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
+
+.header__link {
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 700px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #36536B;
+
+    &:hover{
+        color: #6d8faa;
+    }
+
+}
+
+
+.header__link-demo {
+    text-align: center;
+    width: 173px;
+    padding: 14px;
+    box-shadow: 10px 10px 25px -10px #36536B40;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    font-size:15px ;
+    font-weight: 700px;
+    color: #feffff;
+    line-height: 15px;
+    text-transform: inherit;
+    background: #BA4270;
+    
+    &:hover{
+    opacity: 75%;
+    color: #ffffff;
+}
+}
+
+
+.navbar-menu{
+    padding: 25px;
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: #1B262F;
+    z-index: 50;
+    top: 0;
+    right: -100%;
+    transition: all 0.3s linear;
+}
+.show{
+    right: 0;
+}
+.navbar__top {
+ text-align: end;
+ padding: 23px 0 25px;
+ border-bottom: 1px solid $white-clr;
+}
+.navbar__top-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar__list {
+    padding: 43px 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+}
+.navbar__link{
+    font-family: 'DM Serif Display';
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    line-height: 23px;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    &:hover{
+        color: rgb(255, 255, 255);
+    }
+}
+.navbar__link-demo{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: #BA4270;
+    border-radius: 30px;
+    border: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    border: white;
+    text-transform: inherit;
+
+    &:hover{
+        opacity: 75%;
+    }
+}
+
+.text{
+    color: #ffffff;
+    font-family: "DM Serif Display";
+}
+
+
+
+@media (max-width:850px){
+    .site-header {
+        padding: 40px 0 48px;
+    }
+    .header__logo-img{
+        width: 135px;
+        height: 38px;
+    }
+}
+
+
+// Mobile 
+@media (max-width:689px){
+    .site-header {
+        padding: 40px 0 32px;
+    }
+   .header__list{
+    display: none;
+   }
+   .header__link-demo{
+    display: none;
+   }
+   .header__menu-btn{
+    display: block;
+   }
+}

@@ -1,0 +1,51 @@
+.footer{
+    height: 100px;
+    background-color: #1B262F;
+    display: flex;
+
+}
+
+
+.footer__section{
+    
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:  top;
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: azure;
+    gap: 30px;
+    padding: 12px 40px;
+   
+}
+
+.footer__link{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.63px;
+    text-align: left;
+    color: #FBFCFE;
+    
+
+}
+
+.footer__icon{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+ 
+    gap: 34px;
+
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}

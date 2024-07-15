@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/payapi.svg">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Site Title</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo-wrapper">
+                    <a class="header__logo-link" href="/">
+                        <img class="header__logo-img" src="./images/payapi.svg" alt="Site Logo" width="133" height="36">
+                    </a>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Pricing</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__link-demo" href="#">Schedule a Demo</a>
+                <button onclick="handleMenuBtnClick()" class="header__menu-btn">
+                    <img src="./images/logo.svg" alt="Menu Icon" width="28" height="17">
+                </button>
+            </div>
+        </div>
+        <div class="navbar-menu navbar">
+            <div class="navbar__top">
+                <button onclick="handleCloseModal()" class="navbar__top-btn">
+                    <img src="./images/logo.svg" alt="Close Icon" width="22" height="23">
+                </button>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Pricing</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a class="navbar__link-demo" href="#">Schedule a Demo</a>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="hero-section">
+             <div class="container">
+                 <div class="hero">
+                     <div class="hero_content-wrapper">
+                         <h1 class="hero_title">Start building with our APIs for absolutely free.</h1>
+                         <form class="hero__form" action=" https://echo.htmlacademy.ru " method="post" autocomplete="off">
+                            <label class="hero_label">
+                                 <input class="hero_input" type="text" placeholder="Enter email address" name="user__address" required aria-label="Enter email address">
+                                 <button class="hero_submit-btn" type="submit">Schedule a Demo</button>
+                            </label>
+                         </form>
+                        <p class="hero_bottom-content">Have any questions? <strong class="hero_bottom-content hero_bottom-content--strong-text">Contact Us</strong></p>
+                      </div>
+                          <img class="hero_content-img" src="./images/telefon.png" alt="Mobile img"  width="263" height="500">
+                </div>
+             </div>
+        </section>
+        <section class="work-section">
+            <div class="container">
+                <div class="work">
+                    <div class="work__content-wrapper">
+                        <h2 class="work__title">Who we work with</h2>
+                        <p class="work__text">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. </p>
+                        <a class="work__about-link" href="#">About Us</a>
+                    </div>
+                    <ul class="work__partnership-list partnership">
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/tesla.png" alt="Tesla" width="129" height="17">
+                            </a>
+                        </li>
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/Micrasoft.png" alt="microsoft" width="145" height="31">
+                            </a>
+                        </li>
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/hp.png" alt="HP" width="140" height="27">
+                            </a>
+                        </li>
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/oracle.svg" alt="oracle" width="131" height="17">
+                            </a>
+                        </li>
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/google.svg" alt="google" width="96" height="33">
+                            </a>
+                        </li>
+                        <li class="partnership__item">
+                            <a class="partnership__link" href="#">
+                                <img src="./images/nvidia.svg" alt="nvidia" width="137" height="26">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="navbar__section">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__img">
+                        <img src="./images/implement-img.png" alt="">
+                    </div>
+                    <div class="navbar__text-wrapper">
+                        <h2 class="navbar__text1">Easy to implement</h2>
+                        <p class="navbar__text2">Our API comes with just a few lines of code. You’ll be up and <br> <br> running in no time. We built our documentation page to <br><br>  integrate payments functionality with ease.</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </section>
+
+        <section class="site__section">
+            <div class="container">
+                <div class="site">
+                    <div class="site__text">
+                        <h2 class="site__text3">Simple UI & UX</h2>
+                        <p class="site__text4">Our pre-built form is easy to integrate in your app or website’s <br> checkout flow and designed to optimize conversion. </p>
+                    </div>
+                    <div class="site__text-wrapper">
+                      <img class="site__image" src="./images/UI_UX.png" alt="" >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about__section">
+            <div class="container">
+               <div class="about">
+                <div class="about__subtitle">
+                    <img class="about__img" src="./images/about-logo1.svg" alt="">
+                   <h5 class="about__text1">Personal Finances</h5>
+                   <p class="about__text2">Consolidate financial data from multiple sources <br> and categorize  transactions up to 2 years of <br> history. Analyze reports to reconcile activities in <br> your account. </p>
+                </div>
+                <div class="about__subtitle">
+                    <img class="about__img" src="./images/about-logo2..svg" alt="">
+                   <h5 class="about__text1">Banking & Coverage</h5>
+                   <p class="about__text2">With our platform, you can speed up account  <br>onboarding and support ongoing payments for <br> checking, savings, credit card, and brokerage <br> accounts. </p>
+                </div>
+                <div class="about__subtitle">
+                    <img class="about__img" src="./images/about-logo3.svg" alt="">
+                   <h5 class="about__text1">Consumer Payments</h5>
+                   <p class="about__text2">It’s easier to set up secure bank payments with us <br> through a flow designed with the user experience <br> in mind. Customers could instantly authenticate <br> their account. </p>
+                </div>
+               </div>
+            </div>
+        </section>
+        <section class="service__section">
+            <div class="container">
+                <div class="service">
+                    <div class="service__title">
+                        <h2 class="service__text">Ready to start?</h2>
+                    </div>
+                    <div class="service__button">
+                        <form class="hero__form" action=" https://echo.htmlacademy.ru " method="post" autocomplete="off">
+                            <label class="hero_label">
+                                 <input class="hero_input" type="text" placeholder="Enter email address" name="user__address" required aria-label="Enter email address">
+                                 <button class="hero_submit-btn" type="submit">Schedule a Demo</button>
+                            </label>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <section class="footer__section">
+                <div class="container">
+                    <div class="footer">
+                        <div class="footer__payapi"><img src="./images/payapi2.svg" alt=""></div>
+                        <div class="footer__wrapper">
+                            <ul class="footer__wrapper">
+                                <li class="footer__text">
+                                    <a class="footer__link" href="#">Pricing</a>
+                                </li>
+                                <li class="footer__text">
+                                    <a class="footer__link" href="#">About</a>
+                                </li>
+                                <li class="footer__text">
+                                    <a class="footer__link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="footer__icon">
+                                <img class="icon" src="./images/fecebook.svg" alt="" width="24px" height="24px">
+                                <img class="icon" src="./images/title.svg" alt="" width="24px" height="24px">
+                                <img class="icon" src="./images/in.svg" alt="" width="24px" height="24px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+</body>
+</html>
